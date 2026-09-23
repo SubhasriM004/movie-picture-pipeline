@@ -1,11 +1,11 @@
-name: Frontend Continuous Deployment
+name: Backend Continuous Deployment
 
 on:
   push:
     branches:
       - main
     paths:
-      - "starter/frontend/**"
+      - "starter/backend/**"
   workflow_dispatch:
 
 jobs:
@@ -26,15 +26,14 @@ jobs:
       - name: Login to Amazon ECR
         uses: aws-actions/amazon-ecr-login@v2
 
-      - name: Build and push frontend image
+      - name: Build and push backend image
         env:
-          ECR_REPOSITORY: 291050483364.dkr.ecr.us-east-1.amazonaws.com/frontend
+          ECR_REPOSITORY: 291050483364.dkr.ecr.us-east-1.amazonaws.com/backend
           IMAGE_TAG: ${{ github.sha }}
         run: |
           docker build \
-            --build-arg REACT_APP_MOVIE_API_URL=http://localhost:5000 \
             -t $ECR_REPOSITORY:$IMAGE_TAG \
-            ./starter/frontend
+            ./starter/backend
 
           docker push $ECR_REPOSITORY:$IMAGE_TAG
 
@@ -44,11 +43,11 @@ jobs:
             --region us-east-1 \
             --name cluster
 
-      - name: Deploy frontend to EKS
+      - name: Deploy backend to EKS
         env:
-          ECR_REPOSITORY: 291050483364.dkr.ecr.us-east-1.amazonaws.com/frontend
+          ECR_REPOSITORY: 291050483364.dkr.ecr.us-east-1.amazonaws.com/backend
           IMAGE_TAG: ${{ github.sha }}
         run: |
-          cd starter/frontend/k8s
-          kustomize edit set image frontend=$ECR_REPOSITORY:$IMAGE_TAG
+          cd starter/backend/k8s
+          kustomize edit set image backend=$ECR_REPOSITORY:$IMAGE_TAG
           kustomize build | kubectl apply -f -
