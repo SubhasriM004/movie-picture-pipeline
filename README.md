@@ -406,6 +406,26 @@ kustomize edit set image backend=<ECR_REPO_URL>:<NEW_TAG_HERE>
 # Apply the manifests to the cluster
 kustomize build | kubectl apply -f -
 ```
+
+### GitHub Actions 
+<img width="1892" height="790" alt="Screenshot 2026-09-26 163406" src="https://github.com/user-attachments/assets/fc6eadb1-0cbc-421d-9a1b-ce4068e9da37" />
+
+### Frontend application
+Browser showing:
+<img width="1916" height="873" alt="Screenshot 2026-09-26 163457" src="https://github.com/user-attachments/assets/c6f0c3dc-5907-4b49-a24b-4877844e94a8" />
+
+### Kubernetes resources
+Terminal:
+<img width="1292" height="358" alt="Screenshot 2026-09-26 154026" src="https://github.com/user-attachments/assets/93d1cace-389d-46fa-b74b-8a4a133667b5" />
+
+### Deployment description
+kubectl describe deployment frontend:
+<img width="1913" height="992" alt="Screenshot 2026-09-26 141906" src="https://github.com/user-attachments/assets/097f482d-eec1-4b79-8da7-baf48503afde" />
+
+###  ECR
+<img width="1916" height="872" alt="Screenshot 2026-09-26 160214" src="https://github.com/user-attachments/assets/2e9bf9d9-26d9-4b34-9ccf-9fa65b325884" />
+
+
 ### Deployed Application
 ## Frontend UI
 
