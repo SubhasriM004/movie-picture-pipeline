@@ -406,6 +406,20 @@ kustomize edit set image backend=<ECR_REPO_URL>:<NEW_TAG_HERE>
 # Apply the manifests to the cluster
 kustomize build | kubectl apply -f -
 ```
+### Deployed Application
+## Frontend UI
+
+The deployed frontend application is available at:
+
+http://a94dba1d205ee40dea9d2585dd83d22d-1494514947.us-east-1.elb.amazonaws.com/
+
+The frontend displays the movie catalog retrieved from the backend API.
+
+## Backend API
+
+The deployed backend API is available at:
+
+http://ade3b943cacaf4172a0038e08771d30a-1456771677.us-east-1.elb.amazonaws.com/movies
 
 ## License
 
