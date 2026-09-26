@@ -29,7 +29,7 @@ jobs:
 
       - name: Build and push frontend image
         env:
-          ECR_REPOSITORY: 291050483364.dkr.ecr.us-east-1.amazonaws.com/frontend
+          ECR_REPOSITORY: 820760248695.dkr.ecr.us-east-1.amazonaws.com/frontend
           IMAGE_TAG: ${{ github.sha }}
         run: |
           docker build \
@@ -47,7 +47,7 @@ jobs:
 
       - name: Deploy frontend to EKS
         env:
-          ECR_REPOSITORY: 291050483364.dkr.ecr.us-east-1.amazonaws.com/frontend
+          ECR_REPOSITORY: 820760248695.dkr.ecr.us-east-1.amazonaws.com/frontend
           IMAGE_TAG: ${{ github.sha }}
         run: |
           cd starter/frontend/k8s
