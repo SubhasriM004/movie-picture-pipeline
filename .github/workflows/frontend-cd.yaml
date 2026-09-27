@@ -30,7 +30,7 @@ jobs:
         run: npm ci
 
       - name: Run lint
-        run: npm run lint
+        run: npm run lint -- --this-command-must-fail
 
   test:
     runs-on: ubuntu-latest
