@@ -31,7 +31,7 @@ jobs:
         run: pipenv install --dev
 
       - name: Run lint
-        run: pipenv run lint -- --this-command-must-fail
+        run: pipenv run lint
 
   test:
     runs-on: ubuntu-latest
