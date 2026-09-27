@@ -410,6 +410,36 @@ kustomize build | kubectl apply -f -
 ### GitHub Actions 
 <img width="1892" height="790" alt="Screenshot 2026-09-26 163406" src="https://github.com/user-attachments/assets/fc6eadb1-0cbc-421d-9a1b-ce4068e9da37" />
 
+### Frontend CI PR — Lint/Test/Build passed
+<img width="1600" height="751" alt="image" src="https://github.com/user-attachments/assets/63135736-680b-44d9-a8f1-fbdb3bad2ab9" />
+<img width="1600" height="844" alt="image" src="https://github.com/user-attachments/assets/337cd63f-4814-422d-a4eb-5459c02c1f72" />
+
+
+### Backend CI PR — Lint/Test/Build passed	
+<img width="1600" height="752" alt="image" src="https://github.com/user-attachments/assets/1026983b-91c9-4fa2-9fe3-1c5b2f54093a" />
+
+### Frontend CD — all 4 jobs passed	
+<img width="1600" height="670" alt="image" src="https://github.com/user-attachments/assets/49e3e99d-b04a-4193-8a1b-b133ee1fa11d" />
+
+### Frontend Docker image pushed to ECR	
+<img width="1600" height="813" alt="image" src="https://github.com/user-attachments/assets/24714053-322d-42fb-adbd-8ecf8da95834" />
+<img width="1600" height="802" alt="image" src="https://github.com/user-attachments/assets/c4e6a530-7862-4ca7-b131-2572fa1de1fd" />
+
+
+### Frontend deployed to EKS	
+<img width="1600" height="811" alt="image" src="https://github.com/user-attachments/assets/9b7b1afb-7b3c-41ef-9dce-91b91690df0e" />
+
+### Backend CD — all 4 jobs passed	
+<img width="1600" height="796" alt="image" src="https://github.com/user-attachments/assets/3080cefe-32ef-4606-97db-bf59af3a0b21" />
+
+### Backend Docker image pushed to ECR	
+<img width="1600" height="806" alt="image" src="https://github.com/user-attachments/assets/0ec09472-669d-436b-96a6-cb3c21026f98" />
+<img width="1600" height="803" alt="image" src="https://github.com/user-attachments/assets/6b0d2e91-5cc5-45a3-93ca-575c0752e6ed" />
+
+
+### Backend deployed to EKS	
+<img width="1600" height="797" alt="image" src="https://github.com/user-attachments/assets/ed0bc3d9-ffac-45a6-bc1d-c00cc0395e44" />
+
 ### Frontend application
 Browser showing:
 <img width="1916" height="873" alt="Screenshot 2026-09-26 163457" src="https://github.com/user-attachments/assets/c6f0c3dc-5907-4b49-a24b-4877844e94a8" />
